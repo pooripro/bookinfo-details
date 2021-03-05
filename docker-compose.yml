@@ -1,5 +1,5 @@
 services:
-  ratings:
+  details:
     build: .
     image: detail-service:dev
     ports:
