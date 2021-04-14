@@ -1,9 +1,7 @@
 FROM ruby:2.7
 
-WORKDIR /app
+WORKDIR /usr/src/app
+COPY /src /usr/src/app
+EXPOSE 1080
 
-COPY details.rb /app/details.rb
-
-EXPOSE 8080
-
-CMD ["ruby","/app/details.rb","8080"]   
+CMD ["ruby","/usr/src/app/details.rb","1080"]
